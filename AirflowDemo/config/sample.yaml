@@ -1,0 +1,19 @@
+config:
+  DataBase_name: Sales_DataBase
+  ingest:
+    table_1:
+      query: SELECT * FROM employees
+      table_name: employees
+    table_2:
+      query: SELECT * FROM departments
+      table_name: departments
+    table_3:
+      query: SELECT * FROM products
+      table_name: products
+  metrics:
+    metric_1:
+      metric_name: average_salary
+      query: SELECT AVG(salary) FROM employees
+    metric_2:
+      metric_name: department_count
+      query: SELECT COUNT(*) FROM departments
